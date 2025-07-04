@@ -39,3 +39,5 @@ console.log("test 3.5");
 // like that
 // also can use it inside code
 console.log("test 4",/*"test 5", */"tests 6");
+
+// ok somethings have happened, lets see if its ok now
