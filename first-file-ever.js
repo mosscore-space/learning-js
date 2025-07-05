@@ -119,3 +119,32 @@ console.log(words);
 //*****//
 
 // ok back to business
+// variables could be used used multiple times. in an example if you have written 1000 lines of code and found out that there is a typo that apears in multiple lines.
+// in such case going back and correcting multiple lines is a waste of time.
+// in such cased you can do something like this
+
+console.log("Hello Word!");
+console.log("I love this Word!");
+console.log("I need to live in this Word!");
+console.log("This Word is the best!");
+
+// in this example the coder accidentally did not write the letter 'l' in 'world'
+// in such cased you could so something like this
+
+let z = "World";
+
+console.log("Hello " + z + "!");
+console.log("I love this " + z + "!");
+console.log("I need to live in this " + z + "!");
+console.log("This " + z + " is the best!");
+
+// wait a freaking minute
+// are they saying write let z = "world"; from the get go at the begining of coding or do it ones the issue was identified. cause if we do it after the issue was identified then its same as
+// changing it mannualy
+
+//*****//
+// **chat gpt **
+//It’s all about planning your values up front so you don’t end up hunting for typos later.
+//*****//
+
+// so basicaly at the start cause you dont wanna go on a typo hunt in the middle of a coding session
