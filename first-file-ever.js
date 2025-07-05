@@ -148,3 +148,5 @@ console.log("This " + z + " is the best!");
 //*****//
 
 // so basicaly at the start cause you dont wanna go on a typo hunt in the middle of a coding session
+
+// Using const for Constants____________________________________________________
