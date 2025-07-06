@@ -150,3 +150,62 @@ console.log("This " + z + " is the best!");
 // so basicaly at the start cause you dont wanna go on a typo hunt in the middle of a coding session
 
 // Using const for Constants____________________________________________________
+
+// const is another way of defining variables
+// the difference between 'let' and 'const':
+// let; allows changes to the variables value
+// const; does not allow change to their values
+
+const myNumber = 10;
+
+// lets look at an example
+
+let a = 5;
+console.log(a); // print the intial value of 'a'
+
+a = 10;
+console.log(a); // print the updated value of 'a'
+
+// in contrast the const behaves differently and will give out an error -  TyprError: Assignment to a constant variable
+// a constant cannot be changed
+/* <--- commented out cause the debugger wont g any further than this
+const b = 7;
+console.log(b);
+
+// attempting to reassign a 'const' variable will result in an error
+b = 8;
+console.log(b);
+*/
+/*
+Uncaught TypeError TypeError: Assignment to constant variable.
+    at <anonymous> (file:///home/shaiman/mosscore/learning-js/first-file-ever.js:176:3)
+    at <anonymous> (node:internal/modules/cjs/loader:1692:14)
+    at <anonymous> (node:internal/modules/cjs/loader:1824:10)
+    at <anonymous> (node:internal/modules/cjs/loader:1427:32)
+    at <anonymous> (node:internal/modules/cjs/loader:1250:12)
+    at traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at executeUserEntryPoint (node:internal/modules/run_main:152:5)
+    at <anonymous> (node:internal/main/run_main_module:33:47)
+Process exited with code 1
+*/
+
+// Using const___________________________________________________________________
+
+// constants are used as immutable variables. you can define a constant and use it multtple times
+// const provide data integrity while allowing for quick refactoring
+
+// ** Refactoring ** - refers to making structural changes to code such as modifying values, variable/fuction names etc..
+
+// example: consider 'maxHeight'. you can adjust the height element of a site by changing just one factor in the code. 
+// also its important to note that you cannot change the maximum height during the run time ensuring data integrity
+
+const maxHeight = 250;
+
+console.log(maxHeight - 15);
+console.log(maxHeight - 12);
+console.log(maxHeight -5);
+
+
+// Data Types_____________________________________________________________________
+
