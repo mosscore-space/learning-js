@@ -209,3 +209,97 @@ console.log(maxHeight -5);
 
 // Data Types_____________________________________________________________________
 
+// data types tells the interpreter how to work with the data
+// lets look at an example
+
+// first case
+console.log("123" + "123");  // the result shows as 123123
+
+// second case
+console.log(123 + 123); // the result shows as 246
+
+// as you can see the operation above, the intepreter performs diffrerent operations on different data types
+
+// typesof()_____________________________________________________________________
+
+// the typesof() operation returns a string indicating the type of operands value
+// tf does that mean
+
+//*****//
+// **chat gpt**
+// Think of typeof as a tool that tells you, in words, what kind of data you’re dealing with. 
+// each typeof call evaluates to a string—like "number", "string", or "boolean"—that names the data type of its operand.
+// So “returns a string indicating the type” means the result you get back is itself text describing the kind of value you passed in.
+//*****//
+
+// so basically it returns what type of value that was given
+
+let c = 15;
+console.log(typeof 23);
+console.log(typeof a);
+
+// these both are shown as numbers in the console
+
+const b = "today";
+console.log(typeof "word");
+console.log(typeof b);
+
+// these two are shown as strings in the console
+
+// ok.. fancy i like it but what is it used for?
+
+//*****//
+// **chat gpt**
+// Debugging or logging
+// When you’re not sure what kind of value a variable holds at runtime
+// Branching based on type
+// You want to handle numbers differently from strings
+// Think of typeof as a first gatekeeper whenever your code needs to adapt to different kinds of inputs.
+//*****//
+
+// ok so useless for now. might come handy later
+
+// Number___________________________________________________________________________
+
+// number data types is used for calculations, containers, mathematical operations, etc..
+// unlike other programming laguages js uses the number type(literaly means just numbers) instead of separate int and float types
+
+console.log(typeof(15.25));
+console.log(typeof(211));
+
+console.log(typeof(22 + 251));
+console.log(typeof(26 / 342));
+
+// NOTE: typeof is used in here to show that its a number type
+
+// String__________________________________________________________________________
+
+// the string is a data type used to change pront and pass text to other programs
+
+let str = "Hello! I'm string, and I should help you to work with text!";
+console.log(str);
+
+// inorder to identify the string in the code, we should use single or double quotes 'some text' or "some text"
+
+console.log("text");
+console.log('text');
+
+console.log(typeof("10"));
+
+// ye ye
+
+// Boolean_________________________________________________________________________
+
+// tf is that
+// so boolean is a data type that is used for logical operations. it has two values; true or false.
+// boolean are used to check cinditions.
+// booleans allow you to control code excecution and direct it along different paths
+
+console.log(typeof(true));
+console.log(typeof(false));
+
+console.log(true);
+console.log(false);
+
+console.log(25 > 15);
+console.log(15 > 25);
