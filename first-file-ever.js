@@ -303,3 +303,168 @@ console.log(false);
 
 console.log(25 > 15);
 console.log(15 > 25);
+
+// Working with Null in JS__________________________________________________________
+
+// the null type represents "nothing" meaning absence of data
+// it indicates that a variable is intentionally lacks a value
+
+let variable = null;
+
+console.log("some type of data 1");
+console.log(variable);
+console.log("some type of data 2");
+
+// null is distinct from undefined
+// we use null when we show the absence of data or to pass the concept of "nothing" to another part of the program
+
+/*
+For instance, imagine you're working on a game where you need to describe a hero's data.
+in some cases, the hero's name might be unknown or missing. If the variable containing the hero's name doesn't exist
+attempting to access it would result in an error
+Using the null type allows you to indicate that the hero has no name and can be passed to another part of the program.
+
+This sentence means that by assigning null to the hero’s name, you’re explicitly telling your code “there is no name right now,” and you can still hand that value along without crashing.
+
+• Without null:
+• If you left the variable undeclared, any function that tries to read it would throw a ReferenceError.
+• With null:
+• The function sees a real variable holding the “nothing” value and can handle that case gracefully (e.g., show a placeholder or skip name-based logic).
+*/
+
+// Arrays______________________________________________________________________________
+
+// the array is the most useful data structure
+
+// a data structure is a specialized format for organising and working with data collection. an array is a collection of items where each item is a value
+
+// Creating an array___________________________________________________________________
+
+// to create an array we use square brackets []
+
+const arr = []; // this creates an empty array with no elements
+
+// to create an element with arrays use , to seperate elements
+
+const array = [1, "hi", true]; // NOTE: the last element of the array should not have a , after it
+
+console.log(array);
+console.log(typeof array);  // shows as object in console. why??????
+
+//*****//
+// **chat gpt**
+// an array is just a specialized object under the hood, so typeof won’t distinguish it from other objects.
+//*****//
+
+// Indexes_____________________________________________________________________________
+
+// each element in an array is a unique index
+// NOTE: indexes start from 0. the first element has an index of 0, the second one has an index of 1 and so on
+
+// to assess array data, need to specify the index brackets (index) after the array name
+
+// arrayName[index]
+
+const arry = [1, "first", false, 2, "second"];
+const thirdElement = arry[2];
+
+console.log(thirdElement);
+
+// Length Property_____________________________________________________________________
+
+// the legth property is a build in property of arrays that represent the numbers of elements in the array
+// basically means it counts how many shit is in that array
+
+// to use the property we use the following syntax
+
+// arrayName.length
+
+const arr1 = [10, 20, 30, 40, 50];
+const arr2 = [60, 70, 80, 90, 100, 110, 1120, 1320];
+
+const d = arr1.length;
+const f = arr2.length;
+
+console.log(d);
+console.log(f);
+
+// Array Methods and Manipulation_______________________________________________________
+
+// arrays are versitile for storing and retreving data. 
+// retreving data using squre brackets [] is called indexing.
+
+let arr3 = [1, 2, 3, 4, 5];
+arr[3]; // <-- this is indexing
+
+// but there are a lot of methods available for working with arrays
+
+// Adding Elements_____________________________________________________________________
+// Push________________________________________________________________________________
+
+// the push() method adds a new value to the end of an array
+
+let arr4 = [1, 2, 3];
+
+arr4.push(4);
+arr4.push(5);
+
+console.log(arr4);
+
+// Unshift_____________________________________________________________________________
+
+// unshift() method works like the push() method but instead adds value at the beginnig of the array
+
+console.log("Array:", arr4);
+
+arr4.unshift(0);
+
+console.log("Array:", arr4);
+
+// indexing_____________________________________________________________________________
+
+// indexing allows you to append a new value
+// wtf does that mean you say
+// it means you dont really have to use a build in method like push() to add a new index to the end
+// you can simply assign the value to the index
+// like arr = [1, 2, 3,]; and arr[0] is 1 but you can just change it like arr[0] = 9
+
+let arr5 = [1, 2];
+
+arr5[2] = 3;
+arr5[3] = 4;
+
+console.log(arr5);
+
+// or you can assign a value to a specific index
+
+arr5[0] = 5;
+
+console.log(arr5);
+
+// to create a new element in the array you can eaither use push() method or arr[arr.length] = value expression
+
+let arr6 = []; // empty array
+
+arr6[arr6.length] = "indexing";
+console.log("first index", arr6);
+
+arr6.push("pushing");
+console.log("first pushing", arr6);
+
+arr6[arr6.length] = "indexing";
+console.log("second index", arr6);
+
+arr6.push("pushing");
+console.log("second pushing", arr6);
+
+// Deleting an Element
+// pop()__________________________________________________________________________________
+
+// the pop() method deletes the last element in an array and allows you to save it to another variable
+
+let arr7 = [11, 22, 33, 44, 55];
+console.log("array", arr7);
+
+let j = arr.pop();
+
+
