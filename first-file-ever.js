@@ -465,6 +465,28 @@ console.log("second pushing", arr6);
 let arr7 = [11, 22, 33, 44, 55];
 console.log("array", arr7);
 
-let j = arr.pop();
+let j = arr7.pop();
 
+console.log("popped element", j);
+console.log("array now", arr7);
 
+// me trying my own example
+
+let arr8 = [1, 2, 3, 4, 5, 6];
+console.log("array before", arr8);
+
+arr8.pop();
+
+console.log("array now", arr8);
+
+// ok it worked like i intended
+// but how about 
+
+let arr9 = [1, 2, 3, 4, 5, 6];
+console.log("array before", arr9);
+
+arr9.pop(2);
+
+console.log("array now", arr9);
+
+// so chat gpt says that 2 in arr9.pop(2); is ignored as pop only removes the last index
