@@ -490,3 +490,22 @@ arr9.pop(2);
 console.log("array now", arr9);
 
 // so chat gpt says that 2 in arr9.pop(2); is ignored as pop only removes the last index
+// pop() goes the weasle ~
+
+// Shift()__________________________________________________________________________________
+
+// ok there was unshift, now there is shift()
+// shift() method works like pop(), but it removes the first element from as array
+
+let arr10 = [11, 22, 33, 44, 55];
+console.log("array:", arr10);
+
+let popped = arr10.pop(); // removes the last index from the array and assign it to the value popped
+
+console.log("popped:", popped); // shows the value that was popped
+console.log("array:", arr10); // shows the array after the pop
+
+let shifted = arr10.shift(); // removes the first index off of the array and assign the value to shifted
+
+console.log("shifted:", shifted); // shows the value that was shifted
+console.log("array:", arr10); // shows the value of the array after the sift
