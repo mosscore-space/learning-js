@@ -209,3 +209,79 @@ console.log(null === undefined);  // false
 
 // so what that means is technically saying null does mean undefined but === compares the word for word, not the meaning?
 // thats what i understood
+
+// Greater ans Less_____
+
+console.log("5 > 5 is", 5 > 5); // which is not correct since they are the same number
+console.log("5 > 4.99 is", 5 > 4.99); // is correct
+console.log("5 > 5.0000001 is", 5 > 5.0000001); // is false. come on man
+
+console.log("5 < 5 is", 5 < 5); // still not true
+console.log("5 < 4.99 is", 5 < 4.99); // naah
+console.log("5 < 5.0000001 is", 5 < 5.0000001); // yep
+
+// Greater/Less than or Equals_____
+
+console.log("5 >= 5 is", 5 >= 5); // they are equal so true
+console.log("5 >= 4.99 is", 5 >= 4.99); // is true
+console.log("5 >= 5.0000001 is", 5 >= 5.0000001); // nope
+
+console.log("5 <= 5 is", 5 <= 5); // still is equals to so true
+console.log("5 <= 4.99 is", 5 <= 4.99); // nah
+console.log("5 <= 5.0000001 is", 5 <= 5.0000001); // yes
+
+// Logical Operators_____
+
+// is used to manipulate and make decisions based on boolean values
+
+// there are three js logical operators
+
+// AND ( && )
+// OR ( || )
+// NOT ( ! )
+
+// AND (&&)_____
+
+console.log(true && true); // is true
+console.log(true && false); // is false
+console.log(false && true); // is false
+console.log(false && false); // is true
+
+// kinda works like multiplications + and -
+// + * + = +
+// + * - = -
+// - * + = -
+// - * - = +
+
+// kinda like that
+
+// OR ( || )
+
+console.log(true || true); // true
+console.log(true || false); // true
+console.log(false || true); // true
+console.log(false || false); // false
+
+// The OR (||) operator returns false only when both values are false.
+
+// NOT ( ! )
+
+console.log(!true); // is false cause i said its not ture
+console.log(!false); // is true cause i said its not false
+
+// Using Logical Operators_____
+
+// logical operators are often used to combine condition
+
+let l = 5, m = 3;
+
+console.log(l > 4 && m > 4); // is false cause 5 is greater than 4 but 3 is not greater than 4 and in and (&&) true and a false = false
+console.log(l > 1 && m > 1); // is true cause both sides are correct
+
+// Priority_____
+
+// logical operations have lower priority than conparison operators, which in turn, have lower priority than math operators
+
+// NOT ( !) --> AND ( && ) --> OR ( || )
+
+// similar to other operators, you can use parentheses () to adjust priority
