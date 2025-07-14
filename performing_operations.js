@@ -292,4 +292,4 @@ console.log(l > 1 && m > 1); // is true cause both sides are correct
 // then simply do git pull origin master when editing in my other leptop
 // lets see if this will work
 // moss windows over and out 
-// just some more changes
+// // just some more changes
