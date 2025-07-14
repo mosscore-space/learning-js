@@ -285,3 +285,10 @@ console.log(l > 1 && m > 1); // is true cause both sides are correct
 // NOT ( !) --> AND ( && ) --> OR ( || )
 
 // similar to other operators, you can use parentheses () to adjust priority
+
+// i hereby interept this program to tell you im editing this on my other leptop
+// you can git clone https://github.com/mosscore-space/learning-js.git
+// after editing push the edited to git
+// then simply do git pull origin master when editing in my other leptop
+// lets see if this will work
+// moss windows over and out 
