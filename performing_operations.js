@@ -293,3 +293,29 @@ console.log(l > 1 && m > 1); // is true cause both sides are correct
 // lets see if this will work
 // moss windows over and out 
 // // just some more changes
+
+// Concatenating Strings_____
+
+// Concatenation_____
+
+// its the process of combining strings with the ( + ) operator
+
+let wordone = "Hello";
+let wordtwo = "World";
+
+console.log(wordone + wordtwo + "!"); // the word came as HelloWorld! with no spaces
+
+// so inorder to add the spaces you have to mannualy add spaces in a string
+
+console.log(wordone + " " + wordtwo + " " + "!");
+
+// Concatenating with Assignment_____
+
+// use operators like += to add text to a string variable
+
+let text = "ware";
+
+text += " wolf"; // if you noticed i added a space at the front
+text += "!";
+
+console.log(text);
