@@ -84,3 +84,63 @@ else {
 
 // NOTE: when using  an else statement do not use the end command ( ; ) after if  and the code block {} or else will result in a syntaxerror.
 // consider if else statement as a single command
+
+// Applying ELSE IF for multiple conditions_____
+
+// now look at this code
+
+let f = 11;
+
+if (f > 15) {
+    console.log("greater than 15")
+}
+
+if (f > 10) {
+    console.log("greater than 10")
+}
+
+if (f > 5) {
+    console.log("greater than 5")
+}
+
+// as you can see it logs like 
+// greater than 10
+// greater than 5
+
+// this is not the behaviour you want when you want to execute only one condition
+// the else statement will not work in this condition cause there are multiple conditions
+
+// fucking introducing else if
+// it allows to select specific code block from our series of conditions
+
+/*
+if (condition) {
+    // first 'if' code block
+} 
+else if (condition) {
+    // first 'else if' code block 
+}
+else if (condition) {
+    // second 'else if' code block
+*/
+
+let g = 10;
+
+if (g > 11) {
+    console.log("11 is greater than 10")
+}
+else if (g < 5) {
+    console.log("10 is less than 5")
+}
+else if (g > 9) {
+    console.log("10 is greater than 9") // so basically this gets printed out
+}
+else if (g < 12) {
+    console.log("10 is less than 12") // even though this is correct the previous one gets printed cause it came first
+}
+else {
+    console.log("none of the above meets the condition")
+}
+
+// like mentioned earlier even if one meets a condition the rest of the chain gets interepted
+// this structure is useful when you need just one of the conditions to be satisfied
